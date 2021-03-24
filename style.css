@@ -1,0 +1,80 @@
+body{
+  background-color: mistyrose;
+  background-image: url("castle2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      z-index:10;
+      font-size: 20px;
+      line-height: 1.42857143;
+      letter-spacing: 4px;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: auto;}
+
+    .navbar{
+      background-color:skyblue;
+      background-image: url("texture1.png");
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a 
+    {
+    color: darkturquoise !important;
+    background-color: #fff !important;
+    background-image: url("texture2.jpg");
+    }
+    .navbar-default .navbar-toggle 
+    {
+    border-color: transparent;
+    color: #fff !important;
+    }
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: mistyrose;
+      opacity: 0.9;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color:skyblue;
+      background-image: url("texture1.png");
+      color: darkseagreen;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .affix {
+      top: 0;
+      width: 100%;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+  }
+  .affix-top {
+      position: static;
+      top: -35px;
+  }
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+  .jumbotron {
+    background-color: steelblue;
+    background-image: url("castle.jpg");
+    background-size: cover;
+    background-repeat:  no-repeat;
+
+  }
